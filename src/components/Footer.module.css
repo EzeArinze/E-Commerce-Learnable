@@ -1,0 +1,308 @@
+/* :root {
+  --light-text-color: #ffffff;
+  --light-gray-1: #fafafa;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --primary-color: #23a6f0;
+}
+
+.footerSection {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.header {
+  
+  padding: 2.5rem 3.75rem 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContent {
+  max-width: 66rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 4.3125rem;
+}
+
+.brandName {
+  color: var(--text-color);
+  font: 700 1.5rem/1.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: auto 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.socialImg {
+  aspect-ratio: 1 / 1;
+  object-fit: auto;
+  object-position: center;
+  width: 1.5rem;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 3.1875rem 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerContent {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  max-width: 66rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: var(--second-text-color);
+  line-height: 1.5rem;
+}
+
+.sectionTitle {
+  color: var(--text-color);
+  font: 700 1rem/1.5 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.infoItem {
+  margin-top: 0.625rem;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.subscribeForm {
+  display: flex;
+  margin-top: 1.25rem;
+  border-radius: 0.3125rem;
+  background-color: #f9f9f9;
+  gap: 1.25rem;
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.inputEmail {
+  border: none;
+
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--second-text-color);
+  flex: 1;
+}
+
+.btnSubscribe {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0 0.3125rem 0.3125rem 0;
+  font-family: Montserrat, sans-serif;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.contactNote {
+  color: var(--second-text-color);
+  margin-top: 0.625rem;
+  font: 0.75rem/2.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.footerNote {
+  justify-content: center;
+  align-items: start;
+  background-color: #fafafa;
+  width: 100%;
+  color: var(--second-text-color);
+  padding: 1.5625rem 3.75rem 1.5625rem 12.1875rem;
+  font: 700 0.875rem/1.5rem Montserrat, -apple-system, Roboto, Helvetica,
+    sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 1.25rem;
+  }
+  .headerContent {
+    padding-right: 1.25rem;
+  }
+  .footer {
+    padding: 0 1.25rem;
+  }
+  .footerNote {
+    padding: 0 1.25rem 0 1.875rem;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+} */
+
+/* Footer.module.css */
+.footerSection {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.header {
+  max-width: 1028px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandName {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialImg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer {
+  margin: auto;
+  max-width: 1028px;
+  padding: 20px 0;
+  background-color: #fff;
+  color: gray;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.infoSection,
+.contactSection {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.infoItem {
+  margin: 5px 0;
+}
+
+.contactSection {
+  max-width: none;
+  flex: 2;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputEmail {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.btnSubscribe {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contactNote {
+  margin-top: 10px;
+}
+
+.footerNote {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Media query for screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brandName {
+    margin-bottom: 10px;
+  }
+
+  .socialIcons {
+    margin-top: 10px;
+  }
+}
+
+/* Media query for screens with a min-width of 768px and max-width of 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  .headerContent {
+    justify-content: space-around;
+  }
+
+  .brandName {
+    margin-right: 20px;
+  }
+
+  .socialIcons {
+    margin-left: 20px;
+  }
+}

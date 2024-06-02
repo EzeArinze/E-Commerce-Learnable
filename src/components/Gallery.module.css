@@ -1,0 +1,90 @@
+.Gallery {
+  /* width: 76%; */
+  max-width: 1280px;
+  margin: 8rem auto;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: aqua; */
+}
+
+.section {
+  flex: 1;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.section h2 {
+  color: #30abf1;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.section h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.theysay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theysay p {
+  color: #888;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.theysay h1 {
+  color: #1f1f1f;
+  margin-top: 0;
+  text-align: center;
+}
+
+.theysay h3 {
+  color: #1f1f1f;
+  font-weight: bold;
+}
+
+.photos {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.imageContainer {
+  width: calc(33.33% - 20px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .Gallery {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: calc(50% - 12px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Gallery {
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    width: calc(33.33% - 20px);
+  }
+}

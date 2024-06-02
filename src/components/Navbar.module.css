@@ -1,0 +1,174 @@
+.hearderbar {
+  /* max-width: 76%; */
+  margin: auto;
+  max-width: 100%;
+  background-color: #23856d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.phone {
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  color: #777;
+}
+
+.navbarbrand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brandnavbar {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.navbaritem {
+  display: flex;
+  gap: 15px;
+}
+
+.navbarlink {
+  color: #777;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbarlink:hover {
+  color: #9adaff;
+}
+
+.navbarlinkcolor {
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #62bff4;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* ````````````````````````````````````````````````` */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Ensure modal is relative for absolute positioning within it */
+  width: 80%;
+  height: 371px;
+  max-width: 620px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.closeButton {
+  position: absolute; /* Keep the close button fixed within the modal */
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* ``````````````````````````````````````````````````` */
+
+@media screen and (max-width: 767px) {
+  .hearderbar {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .brandnavbar {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbaritem {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbaritem.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbarlinkcolor {
+    margin-top: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}

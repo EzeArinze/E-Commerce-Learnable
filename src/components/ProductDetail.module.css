@@ -1,0 +1,275 @@
+.productdetail {
+  align-items: center;
+  margin: 12px auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 700px; /* Fixed width to prevent shrinking */
+}
+
+.imagewrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; /* Ensure the image wrapper takes a fixed portion of the container */
+}
+
+.productdetailimage {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.productdetailimage:hover {
+  transform: scale(1.05);
+}
+
+.navicon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.navicon:hover {
+  color: #000;
+}
+
+.navicon:nth-of-type(1) {
+  left: 10px;
+}
+
+.navicon:nth-of-type(2) {
+  right: 10px;
+}
+
+.thumbnailcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #000;
+}
+
+.activethumbnail {
+  border-color: #888;
+}
+
+.productdetailcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%; /* Ensure the content section takes a fixed portion of the container */
+}
+
+.productdetailtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ratingnreview {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingnreview p {
+  font-size: 1.4rem;
+}
+
+.productdetailprice {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.avialable {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inStock {
+  color: #23a6f0;
+}
+
+.colorOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #818181;
+  padding-top: 8px;
+}
+
+.colorButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.colorButton:hover {
+  border-color: #000;
+}
+
+.productdetailbuttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.selectedColor {
+  border-color: #000;
+}
+
+.selectoptionButton {
+  padding: 8px 16px;
+  font-weight: 600;
+  background-color: #23a6f0;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.iconbutton {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.iconbutton:hover {
+  background-color: #388e3c;
+}
+
+.iconbutton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center the loader */
+}
+
+/* Media query for screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+  .productdetail {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .imagewrapper,
+  .productdetailcontent {
+    width: 100%;
+  }
+
+  .navicon {
+    font-size: 20px;
+  }
+
+  .productdetailtitle {
+    font-size: 20px;
+  }
+
+  .ratingnreview p {
+    font-size: 1.2rem;
+  }
+
+  .productdetailprice {
+    font-size: 18px;
+  }
+
+  .avialable {
+    font-size: 1.2rem;
+  }
+
+  .productdetailbuttons {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .selectoptionButton,
+  .iconbutton {
+    display: flex;
+    text-align: center;
+  }
+}
+
+/* Media query for screens with a min-width of 768px and max-width of 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .productdetail {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .imagewrapper,
+  .productdetailcontent {
+    width: 100%;
+  }
+
+  .navicon {
+    font-size: 22px;
+  }
+
+  .productdetailtitle {
+    font-size: 22px;
+  }
+
+  .ratingnreview p {
+    font-size: 1.3rem;
+  }
+
+  .productdetailprice {
+    font-size: 19px;
+  }
+
+  .avialable {
+    font-size: 1.3rem;
+  }
+
+  .productdetailbuttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .selectoptionButton,
+  .iconbutton {
+    text-align: center;
+  }
+}

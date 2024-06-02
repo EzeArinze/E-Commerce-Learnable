@@ -1,0 +1,57 @@
+/* src/components/Breadcrumbs.module.css */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+  margin-left: 1.3rem;
+  /* background-color: #f8f9fa; */
+  border-radius: 4px;
+}
+
+.breadcrumbItem {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #111111;
+}
+
+.breadcrumbItem + .breadcrumbItem::before {
+  content: ">";
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+  font-weight: 700;
+  color: #6c757d;
+}
+
+.breadcrumbItem a {
+  text-decoration: none;
+  color: #292929;
+  font-weight: 600;
+}
+
+.breadcrumbItem a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #a3a3a3;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .breadcrumb {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .breadcrumbItem {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .breadcrumbItem + .breadcrumbItem::before {
+    content: ">";
+  }
+}

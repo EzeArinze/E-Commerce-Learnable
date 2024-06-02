@@ -1,0 +1,135 @@
+.herosection {
+  display: flex;
+  max-width: 1280px;
+  height: 650px;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.mainImageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.secondaryImageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.thirdpix {
+  position: relative;
+  display: flex;
+  gap: 13px;
+}
+
+.textContainer,
+.secondaryTextContainer,
+.thirdTextContainer {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #000;
+  z-index: 1000;
+}
+
+.textContainer h4,
+.secondaryTextContainer h4,
+.thirdTextContainer h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #008000;
+}
+
+.textContainer h3,
+.secondaryTextContainer h3,
+.thirdTextContainer h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .image {
+  max-width: 100%;
+  height: auto;
+} */
+
+@media screen and (max-width: 767px) {
+  .herosection {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .mainImageWrapper,
+  .secondaryImageWrapper,
+  .thirdpix {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textContainer h4,
+  .secondaryTextContainer h4,
+  .thirdTextContainer h4 {
+    font-size: 14px;
+  }
+
+  .textContainer h3,
+  .secondaryTextContainer h3,
+  .thirdTextContainer h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .herosection {
+    width: 80%;
+    height: auto;
+    padding: 0 40px;
+  }
+
+  .mainImageWrapper {
+    gap: 10px;
+  }
+
+  .secondaryImageWrapper {
+    gap: 10px;
+  }
+
+  .thirdpix {
+    gap: 10px;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textContainer h4,
+  .secondaryTextContainer h4,
+  .thirdTextContainer h4 {
+    font-size: 15px;
+  }
+
+  .textContainer h3,
+  .secondaryTextContainer h3,
+  .thirdTextContainer h3 {
+    font-size: 20px;
+  }
+}

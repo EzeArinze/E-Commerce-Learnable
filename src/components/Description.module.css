@@ -1,0 +1,644 @@
+/* .Description {
+  margin: auto;
+  max-width: 1280px;
+  background-color: #fff;
+}
+
+.DescriptionHeaderText {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #d8d7d7;
+}
+
+.DescriptionHeaderText p {
+  font-size: 1.8rem;
+  color: #888;
+}
+
+.DescriptionReview {
+  color: green;
+}
+
+.MainDescription {
+  margin: auto;
+  width: 1028px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
+
+.DescriptionSectionText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  
+}
+
+.DescriptionH3 {
+  font-size: 3.2rem;
+  color: #353535;
+  font-weight: bold;
+}
+
+.DescriptionParagragh {
+  width: 65%;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.DescriptionParagragh:nth-child(3) {
+  border-left: 6px solid #23856d;
+  border-radius: 0.5rem;
+}
+.DescriptionImage {
+  flex: 1;
+}
+
+
+@media screen and (max-width: 767px) {
+  .DescriptionHeaderText {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .DescriptionHeaderText p {
+    font-size: 1.5rem;
+  }
+
+  .MainDescription {
+    width: 90%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .DescriptionSectionText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .DescriptionH3 {
+    font-size: 2.5rem;
+  }
+
+  .DescriptionParagragh {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .DescriptionImage {
+    width: 100%;
+  }
+
+  .imgList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brandsImg {
+    width: 6rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .DescriptionHeaderText {
+    width: 85%;
+    gap: 15px;
+  }
+
+  .DescriptionHeaderText p {
+    font-size: 1.6rem;
+  }
+
+  .MainDescription {
+    width: 90%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .DescriptionSectionText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .DescriptionH3 {
+    font-size: 2.8rem;
+  }
+
+  .DescriptionParagragh {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .DescriptionImage {
+    width: 100%;
+  }
+
+  .imgList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brandsImg {
+    width: 7rem;
+  }
+} */
+
+/* Default styles for larger screens */
+.Description {
+  margin: auto;
+  max-width: 1280px;
+  background-color: #fff;
+}
+
+.DescriptionHeaderText {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #d8d7d7;
+}
+
+.DescriptionHeaderText p {
+  font-size: 1.8rem;
+  color: #888;
+}
+
+.DescriptionReview {
+  color: green;
+}
+
+.MainDescription {
+  margin: auto;
+  width: 1028px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
+
+.DescriptionSectionText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.DescriptionH3 {
+  font-size: 3.2rem;
+  color: #353535;
+  font-weight: bold;
+}
+
+.DescriptionParagragh {
+  width: 65%;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.DescriptionParagragh:nth-child(3) {
+  border-left: 6px solid #23856d;
+  border-radius: 0.5rem;
+}
+
+.DescriptionImage {
+  flex: 1;
+}
+
+.imageGallery {
+  background-color: var(--light-gray-1, #fafafa);
+  max-width: 1028px;
+  margin: auto;
+}
+
+.imgList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: auto;
+  object-position: center;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.brandsImg {
+  width: 6rem; /* Reduced the width for smaller images */
+}
+
+@media (max-width: 991px) {
+  .imageGallery {
+    padding: 0 20px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1028px;
+  max-width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .imageContainer {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+
+/* Media query for screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+  .DescriptionHeaderText {
+    width: 90%;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .DescriptionHeaderText p {
+    font-size: 1rem;
+  }
+
+  .MainDescription {
+    width: 90%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .DescriptionSectionText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .DescriptionH3 {
+    font-size: 2.5rem;
+  }
+
+  .DescriptionParagragh {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .DescriptionImage {
+    width: 100%;
+  }
+
+  .imgList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brandsImg {
+    width: 4rem; /* Further reduced the width for smaller screens */
+  }
+}
+
+/* Media query for screens with a min-width of 768px and max-width: 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .MainDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .DescriptionHeaderText {
+    width: 85%;
+    gap: 15px;
+  }
+
+  .DescriptionHeaderText p {
+    font-size: 1.6rem;
+  }
+
+  .MainDescription {
+    width: 80%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .DescriptionSectionText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .DescriptionH3 {
+    font-size: 2.8rem;
+  }
+
+  .DescriptionParagragh {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .DescriptionImage {
+    width: 100%;
+  }
+
+  .imgList {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .brandsImg {
+    width: 5rem; /* Adjusted width for medium screens */
+  }
+}
+
+/* Styles for the product detail section */
+.productdetail {
+  align-items: center;
+  margin: 12px auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 700px; /* Fixed width to prevent shrinking */
+}
+
+.imagewrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; /* Ensure the image wrapper takes a fixed portion of the container */
+}
+
+.productdetailimage {
+  max-width: 100%;
+  max-height: 200px; /* Reduced the max-height for smaller images */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.productdetailimage:hover {
+  transform: scale(1.05);
+}
+
+.navicon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.navicon:hover {
+  color: #000;
+}
+
+.navicon:nth-of-type(1) {
+  left: 10px;
+}
+
+.navicon:nth-of-type(2) {
+  right: 10px;
+}
+
+.thumbnailcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 40px; /* Reduced width for thumbnails */
+  height: 40px; /* Reduced height for thumbnails */
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #000;
+}
+
+.activethumbnail {
+  border-color: #888;
+}
+
+.productdetailcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%; /* Ensure the content section takes a fixed portion of the container */
+}
+
+.productdetailtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ratingnreview {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingnreview p {
+  font-size: 1.4rem;
+}
+
+.productdetailprice {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.avialable {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inStock {
+  color: #23a6f0;
+}
+
+.colorOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #818181;
+  padding-top: 8px;
+}
+
+.colorButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.colorButton:hover {
+  border-color: #000;
+}
+
+.productdetailbuttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.selectedColor {
+  border-color: #000;
+}
+
+.selectoptionButton {
+  padding: 8px 16px;
+  font-weight: 600;
+  background-color: #23a6f0;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.iconbutton {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.iconbutton:hover {
+  background-color: #388e3c;
+}
+
+.iconbutton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center the loader */
+}
+
+@media (max-width: 767px) {
+  .productdetail {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .imagewrapper {
+    width: 100%;
+  }
+
+  .productdetailcontent {
+    width: 100%;
+  }
+
+  .productdetailimage {
+    max-height: 150px; /* Further reduced max-height for smaller screens */
+  }
+
+  .thumbnail {
+    width: 30px; /* Further reduced width for thumbnails */
+    height: 30px; /* Further reduced height for thumbnails */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productdetail {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .imagewrapper {
+    width: 100%;
+  }
+
+  .productdetailcontent {
+    width: 100%;
+  }
+
+  .productdetailimage {
+    max-height: 175px; /* Adjusted max-height for medium screens */
+  }
+
+  .thumbnail {
+    width: 35px; /* Adjusted width for thumbnails */
+    height: 35px; /* Adjusted height for thumbnails */
+  }
+}
+
+/* ````````````````````````````````````````````````````````` */
+
+.imageGallery {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: var(--light-gray-1, #fafafa);
+  max-width: 1028px;
+  margin: auto;
+}
+
+.imgList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: auto;
+  object-position: center;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.brandsImg {
+  width: 8rem;
+}
+
+@media (max-width: 991px) {
+  .imageGallery {
+    padding: 0 20px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1028px;
+  max-width: 100%;
+  gap: 20px;
+  /* padding: 50px 31px; */
+}
+
+@media (max-width: 991px) {
+  .imageContainer {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}

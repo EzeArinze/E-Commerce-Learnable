@@ -1,0 +1,155 @@
+.Cta {
+  /* width: 100%; */
+  max-width: 100%;
+  margin: auto;
+  height: 400px;
+  /* height: auto; */
+  flex-shrink: 0;
+  background: rgb(78, 78, 78) url("../assets/images/gallary/cta.png") center /
+    cover no-repeat !important;
+}
+
+.CtaImage {
+  width: 100%;
+}
+
+.CtaSetion {
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Ctabutton {
+  font-size: 1.8rem;
+  padding: 12px 18px;
+  background-color: #23a6f0;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.CtaHeader {
+  color: var(--primary-text-color, #23a6f0);
+  text-align: center;
+
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+}
+
+.CtaSubHeader {
+  color: var(--text-color, #252b42);
+  text-align: center;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+}
+
+.CtaSubtitle {
+  color: var(--second-text-color, #585858);
+  text-align: center;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.CtaPrice {
+  color: var(--secondary-color-1, #23856d);
+  text-align: center;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.1px;
+}
+
+@media screen and (max-width: 767px) {
+  .Cta {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+  }
+
+  .CtaSetion {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .Ctabutton {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+
+  .CtaHeader {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .CtaSubHeader {
+    font-size: 24px;
+  }
+
+  .CtaSubtitle {
+    font-size: 16px;
+  }
+
+  .CtaPrice {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Media query for screens with a min-width of 768px and max-width: 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Cta {
+    height: 350px;
+    padding: 20px;
+    background-size: cover;
+  }
+
+  .CtaSetion {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .Ctabutton {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+
+  .CtaHeader {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .CtaSubHeader {
+    font-size: 26px;
+  }
+
+  .CtaSubtitle {
+    font-size: 17px;
+  }
+
+  .CtaPrice {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
