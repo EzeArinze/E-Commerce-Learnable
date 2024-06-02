@@ -124,7 +124,7 @@ function Favorite() {
                   onClick={() => removeItem(item.id)}
                   className={styles.FavProductButton}
                 >
-                  Remove item
+                  Remove
                 </button>
               </div>
             </li>

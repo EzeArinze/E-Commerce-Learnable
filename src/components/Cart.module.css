@@ -342,7 +342,7 @@
 
   .subtotal,
   .total {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
@@ -374,7 +374,7 @@
     display: none;
   }
   .summaryHeader {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
   .cart {
@@ -383,6 +383,8 @@
 
   .productCard {
     position: relative;
+    margin: auto;
+    max-width: 70%;
   }
 
   .priceContainer {

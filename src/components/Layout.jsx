@@ -1,26 +1,3 @@
-// import { Outlet } from "react-router-dom";
-// import NavBar from "./NavBar";
-// import { Provider } from "react-redux";
-// import store from "../store/store";
-// import Footer from "./Footer";
-
-// function Layout() {
-//   return (
-//     <>
-//       <Provider store={store}>
-//         <NavBar />
-//         <main>
-//           <Outlet />
-
-//           <Footer />
-//         </main>
-//       </Provider>
-//     </>
-//   );
-// }
-
-// export default Layout;
-
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import { Provider } from "react-redux";

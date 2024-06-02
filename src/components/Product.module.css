@@ -35,6 +35,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  flex: 1 1 200px; /* Ensure flexible width */
+  max-width: 200px; /* Ensure maximum width */
 }
 
 .productimage {
@@ -51,7 +53,6 @@
 }
 
 .producttitle {
-  /* margin-top: 1.2rem; */
   font-size: 16px;
   overflow: hidden;
   margin: 0;
@@ -166,10 +167,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height to center the loader */
+  height: 100vh;
 }
 
 .actionButtons .favoriteButton,
 .actionButtons .addToCartbtn {
   margin-top: 10px;
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+  .productlist {
+    gap: 15px;
+  }
+
+  .productitem {
+    width: calc(50% - 20px); /* Two items per row */
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .productlist {
+    gap: 10px;
+  }
+
+  .productitem {
+    width: calc(50% - 10px); /* Two items per row */
+  }
+
+  .productheadertext h2 {
+    font-size: 1.5rem;
+  }
+
+  .producttitle {
+    font-size: 14px;
+  }
+
+  .categoryName {
+    font-size: 1.1rem;
+  }
+
+  .productprice,
+  .productPrice {
+    font-size: 12px;
+  }
+
+  .actionButtons .iconButton {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .favoriteButton {
+    bottom: 100px;
+    left: 75px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .productitem {
+    width: calc(50% - 10px); /* Two items per row */
+  }
 }
