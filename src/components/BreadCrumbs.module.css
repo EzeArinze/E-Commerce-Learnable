@@ -43,7 +43,7 @@
 @media (max-width: 600px) {
   .breadcrumb {
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   }
 
   .breadcrumbItem {
