@@ -98,6 +98,8 @@
 }
 
 .quantityButton {
+  display: flex;
+  align-items: center;
   background-color: #23a6f0;
   color: #fff;
   border: none;
@@ -158,8 +160,6 @@
   font-size: 1rem;
   color: var(--white, #fefefe);
   font-weight: 600;
-  letter-spacing: 0.03px;
-  line-height: 161.8%;
   padding: 1.0625rem 2.0625rem;
 }
 

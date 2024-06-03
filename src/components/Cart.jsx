@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import styles from "./Cart.module.css";
 import { remove, increaseQuantity, decreaseQuantity } from "../store/cartSlice";
 import StarRating from "./StarRating";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 import MasterCard from "../assets/images/payment/Mastercard.png";
 import Visa from "../assets/images/payment/VisaInc.png";
 import Paystack from "../assets/images/payment/Paystack.png";
@@ -78,14 +79,14 @@ function Cart() {
                       className={styles.quantityButton}
                       onClick={() => decreaseItemQuantity(product.id)}
                     >
-                      -
+                      <FaMinus />
                     </button>
                     <span className={styles.quantity}>{product.quantity}</span>
                     <button
                       className={`${styles.quantityButton} ${styles.addButton}`}
                       onClick={() => increaseItemQuantity(product.id)}
                     >
-                      +
+                      <FaPlus />
                     </button>
                   </div>
                   <div className={styles.priceContainer}>
