@@ -53,7 +53,11 @@ function Product({
   }
 
   if (error) {
-    return <p>Something went wrong, try again later.</p>;
+    return (
+      <p className={styles.ErrorMessage}>
+        ⚠ Something went wrong, try again later.
+      </p>
+    );
   }
 
   return (

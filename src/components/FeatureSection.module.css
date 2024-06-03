@@ -1,14 +1,10 @@
 .featureSection {
   margin: 20px auto;
   display: flex;
-  /* width: 66%; */
-  max-width: 1280px;
+  max-width: 1028px;
   padding: 0px 195px 16px 195px;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
   gap: 40px;
-  /* background: var(--light-background-color, #777); */
 }
 
 .featureheadertext {
@@ -82,7 +78,7 @@
 .featurepost {
   margin: 2rem auto;
   margin-bottom: 4rem;
-  width: 74%;
+  max-width: 1028px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,13 +208,7 @@
   background-color: #0056b3;
 }
 
-@media screen and (max-width: 767px) {
-  .card {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-
+/* `````````QUERY````````````` */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card {
     width: 100%;
@@ -232,7 +222,8 @@
   }
 
   .card {
-    width: 90%;
+    width: 83%;
+    margin-bottom: 1rem;
   }
 }
 

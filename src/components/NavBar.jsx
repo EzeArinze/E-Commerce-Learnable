@@ -17,26 +17,28 @@ import Favorite from "./Favorite";
 
 function HeaderBar() {
   return (
-    <header className={styles.hearderbar}>
-      <div className={styles.phone}>
-        <BsTelephone />
-        <p>(225) 555-0118 </p>
-      </div>
-      <div className={styles.phone}>
-        <IoIosMail />
-        <p>MichelleRivera@example.com</p>
-      </div>
-      <div className={styles.phone}>
-        <p>Follow us and get the chance to win 80% off</p>
-      </div>
-      <div className={styles.phone}>
-        <p>Follow us: </p>
-        <FaInstagram />
-        <FaYoutube />
-        <FaFacebook />
-        <FaTwitter />
-      </div>
-    </header>
+    <nav className={styles.hearderbar}>
+      <header className={styles.headerNav}>
+        <div className={styles.phone}>
+          <BsTelephone />
+          <p>(225) 555-0118 </p>
+        </div>
+        <div className={styles.phone}>
+          <IoIosMail />
+          <p>MichelleRivera@example.com</p>
+        </div>
+        <div className={styles.phone}>
+          <p>Follow us and get the chance to win 80% off</p>
+        </div>
+        <div className={styles.phone}>
+          <p>Follow us: </p>
+          <FaInstagram />
+          <FaYoutube />
+          <FaFacebook />
+          <FaTwitter />
+        </div>
+      </header>
+    </nav>
   );
 }
 

@@ -1,8 +1,11 @@
 .hearderbar {
-  /* max-width: 76%; */
-  margin: auto;
   max-width: 100%;
   background-color: #23856d;
+}
+
+.headerNav {
+  max-width: 1028px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +22,7 @@
 
 .navbar {
   margin: auto;
-  max-width: 100%;
+  max-width: 1028px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +111,7 @@
   background: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  position: relative; /* Ensure modal is relative for absolute positioning within it */
+  position: relative;
   width: 80%;
   height: 371px;
   max-width: 620px;
@@ -121,7 +124,7 @@
 }
 
 .closeButton {
-  position: absolute; /* Keep the close button fixed within the modal */
+  position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;

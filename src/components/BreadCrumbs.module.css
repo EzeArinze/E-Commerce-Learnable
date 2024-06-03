@@ -1,18 +1,19 @@
 /* src/components/Breadcrumbs.module.css */
 .breadcrumb {
+  max-width: 1028px;
   display: flex;
   align-items: center;
   list-style: none;
   padding: 10px 0;
-  margin-left: 1.3rem;
+  margin: auto;
   /* background-color: #f8f9fa; */
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 .breadcrumbItem {
   margin-right: 10px;
   font-size: 14px;
-  color: #111111;
+  color: s#3b4148;
 }
 
 .breadcrumbItem + .breadcrumbItem::before {
@@ -44,6 +45,7 @@
   .breadcrumb {
     flex-direction: row;
     justify-content: left;
+    margin-left: 1rem;
   }
 
   .breadcrumbItem {
