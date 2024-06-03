@@ -75,19 +75,17 @@ function Cart() {
                     </div>
                   </div>
                   <div className={styles.quantityControl}>
-                    <button
+                    <FaMinus
                       className={styles.quantityButton}
                       onClick={() => decreaseItemQuantity(product.id)}
-                    >
-                      <FaMinus />
-                    </button>
+                    />
+
                     <span className={styles.quantity}>{product.quantity}</span>
-                    <button
+
+                    <FaPlus
                       className={`${styles.quantityButton} ${styles.addButton}`}
                       onClick={() => increaseItemQuantity(product.id)}
-                    >
-                      <FaPlus />
-                    </button>
+                    />
                   </div>
                   <div className={styles.priceContainer}>
                     <p className={styles.productPrice}>
