@@ -107,6 +107,7 @@
 /* Media query for screens with a max-width of 767px */
 @media screen and (max-width: 767px) {
   .DescriptionHeaderText {
+    display: none;
     width: 90%;
     flex-direction: row;
     gap: 10px;
@@ -117,6 +118,7 @@
   }
 
   .MainDescription {
+    display: none;
     width: 90%;
     flex-direction: column;
     padding: 10px;

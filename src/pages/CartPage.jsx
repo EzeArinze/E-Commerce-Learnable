@@ -1,24 +1,3 @@
-// import Cart from "../components/Cart";
-// import Product from "../components/Product";
-
-// function CartPage() {
-//   return (
-//     <div>
-//       <Cart />
-//       <Product
-//         showLoadMore={false}
-//         headerTitle=""
-//         headerSubtitle="PRODUCTS RELATED TO ITEMS IN YOUR CART"
-//         headerDescription=""
-//       />
-//     </div>
-//   );
-// }
-
-// export default CartPage;
-
-// src/pages/CartPage.jsx
-
 import Cart from "../components/Cart";
 import Product from "../components/Product";
 import Breadcrumbs from "../components/BreadCrumbs";
